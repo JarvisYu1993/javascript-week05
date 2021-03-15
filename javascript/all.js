@@ -123,14 +123,9 @@ regionSearch.addEventListener('change',(e)=>{
             `;
             str += content;
             ticketNum +=1;
-        }else{
-            let content = `<h3>查無此關鍵字資料</h3><img src="https://i.imgur.com/dZI8FJQ.png" alt="">
-            `;
-            str += content;
         }
     ticketCardArea.innerHTML = str;
     searchResult.textContent = `本次搜尋共 ${ticketNum} 筆資料`;
-    cantFindArea.innerHTML = content;
     });
 });    
     //渲染資料
